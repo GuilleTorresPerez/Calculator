@@ -1,0 +1,12 @@
+.calculator .display {
+    width: 500px;
+    aspect-ratio: 4 / 1;
+    background-color: lightgray;
+}
+
+.calculator .keyboard button {
+    width: 70px;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    border-radius: 30%;
+}
