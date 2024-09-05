@@ -3,7 +3,6 @@ let secondOperand = 0;
 let operator = '';
 let result = 0;
 const display = document.querySelector('.display');
-const calculatorSM = new operationStateMachine();
 
 class operationStateMachine {
     constructor() {
@@ -93,15 +92,20 @@ const multiply = (num1, num2) => num1 * num2;
 const divide = (num1, num2) => num1 / num2;
 
 function operate(num1, num2, operator) {
+    let result = 0;
     switch(operator) {
         case '+':
-            return add(num1, num2);
+            result = add(num1, num2);
+            return Math.round((result + Number.EPSILON) * 10000000) / 10000000
         case '-':
-            return substract(num1, num2);
+            result = substract(num1, num2);
+            Math.round((result + Number.EPSILON) * 10000000) / 10000000
         case '*':
-            return multiply(num1, num2);
+            result = multiply(num1, num2);
+            return Math.round((result + Number.EPSILON) * 10000000) / 10000000
         case '/':
-            return divide(num1, num2);
+            result = divide(num1, num2);
+            return Math.round((result + Number.EPSILON) * 10000000) / 10000000
     }
 }
 
@@ -112,6 +116,7 @@ const clearOperation = () => {
     result = 0;
 };
 
+const calculatorSM = new operationStateMachine();
 const digitPressed = (digit) => calculatorSM.digitPressed(digit);
 const operatorPressed = (char) => calculatorSM.operatorPressed(char); 
 const equalPressed = () => calculatorSM.equalPressed();
