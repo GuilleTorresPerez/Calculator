@@ -1,12 +1,49 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+main {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background-color: aliceblue;
+    flex-basis: 500px;
+    border-radius: 5%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    justify-content: space-between;
+}
+
 .calculator .display {
-    width: 500px;
-    aspect-ratio: 4 / 1;
+    flex-basis: 125px;
     background-color: lightgray;
 }
 
+.calculator .keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
 .calculator .keyboard button {
-    width: 70px;
+    flex-basis: 80px;
     aspect-ratio: 1 / 1;
     cursor: pointer;
-    border-radius: 30%;
+    border-radius: 20%;
+}
+
+.calculator .keyboard #add {
+    background-color: lightgreen;
 }
