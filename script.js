@@ -99,7 +99,7 @@ function operate(num1, num2, operator) {
             return Math.round((result + Number.EPSILON) * 10000000) / 10000000
         case '-':
             result = substract(num1, num2);
-            Math.round((result + Number.EPSILON) * 10000000) / 10000000
+            return Math.round((result + Number.EPSILON) * 10000000) / 10000000
         case '*':
             result = multiply(num1, num2);
             return Math.round((result + Number.EPSILON) * 10000000) / 10000000

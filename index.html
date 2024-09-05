@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <link rel="shortcut icon" href="#">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap" rel="stylesheet">
   </head>
   <body>
     <main>
       <div class="calculator">
         <div class="display"></div>
         <div class="keyboard">
-            <button id="clear" onclick="clearPressed()">CLEAR</button>
-            <button id="1" onclick="digitPressed(1)">1</button>
-            <button id="2" onclick="digitPressed(2)">2</button>
-            <button id="3" onclick="digitPressed(3)">3</button>
-            <button id="4" onclick="digitPressed(4)">4</button>
-            <button id="5" onclick="digitPressed(5)">5</button>
-            <button id="6" onclick="digitPressed(6)">6</button>
-            <button id="7" onclick="digitPressed(7)">7</button>
-            <button id="8" onclick="digitPressed(8)">8</button>
-            <button id="9" onclick="digitPressed(9)">9</button>
-            <button id="0" onclick="digitPressed(0)">0</button>
-            <button id="equal" onclick="equalPressed()">=</button>
-            <button id="add" onclick="operatorPressed('+')">+</button>
-            <button id="substract" onclick="operatorPressed('-')">-</button>
-            <button id="multiply" onclick="operatorPressed('*')">*</button>
-            <button id="divide" onclick="operatorPressed('/')">/</button>
+          <button id="1" onclick="digitPressed(1)">1</button>
+          <button id="2" onclick="digitPressed(2)">2</button>
+          <button id="3" onclick="digitPressed(3)">3</button>
+          <button class="operator" onclick="operatorPressed('+')">+</button>
+          <button id="4" onclick="digitPressed(4)">4</button>
+          <button id="5" onclick="digitPressed(5)">5</button>
+          <button id="6" onclick="digitPressed(6)">6</button>
+          <button class="operator" onclick="operatorPressed('-')">-</button>
+          <button id="7" onclick="digitPressed(7)">7</button>
+          <button id="8" onclick="digitPressed(8)">8</button>
+          <button id="9" onclick="digitPressed(9)">9</button>
+          <button class="operator" onclick="operatorPressed('*')">*</button>
+          <button id="clear" onclick="clearPressed()">CLEAR</button>
+          <button id="0" onclick="digitPressed(0)">0</button>
+          <button id="equal" onclick="equalPressed()">=</button>
+          <button class="operator" onclick="operatorPressed('/')">/</button>
         </div>
       </div>
     </main>

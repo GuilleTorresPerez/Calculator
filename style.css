@@ -15,7 +15,7 @@ main {
 }
 
 .calculator {
-    background-color: aliceblue;
+    background-color: #477abb;
     flex-basis: 500px;
     border-radius: 5%;
     padding: 50px;
@@ -27,7 +27,17 @@ main {
 
 .calculator .display {
     flex-basis: 125px;
-    background-color: lightgray;
+    background-color: #034f8c;
+    color: #fefdf9;
+    font-size: 4.5em;
+    font-family: "Noto Sans Math", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .calculator .keyboard {
@@ -38,12 +48,27 @@ main {
 }
 
 .calculator .keyboard button {
+    background-color: #fefdf9;
+    border: 2px solid #fefdf9;   
     flex-basis: 80px;
     aspect-ratio: 1 / 1;
-    cursor: pointer;
     border-radius: 20%;
+    color: #011627;   
+    font-size: 2em;            
 }
 
-.calculator .keyboard #add {
-    background-color: lightgreen;
+.calculator .keyboard .operator {
+    background-color: #f3d61a;
+    border: 2px solid #f3d61a;
+}
+
+.calculator .keyboard #clear {
+    background-color: #30CD8B;
+    border: 2px solid #30CD8B;
+    font-size: 1.25em;
+}
+
+.calculator .keyboard #equal {
+    background-color: #FF7E94;
+    border: 2px solid #FF7E94;
 }
