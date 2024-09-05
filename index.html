@@ -16,27 +16,27 @@
         <div class="display"></div>
         <div class="keyboard">
           <div class="numbers">
-            <button id="0" onclick="digitPressed(0)"></button>
-            <button id="1" onclick="digitPressed(1)"></button>
-            <button id="2" onclick="digitPressed(2)"></button>
-            <button id="3" onclick="digitPressed(3)"></button>
-            <button id="4" onclick="digitPressed(4)"></button>
-            <button id="5" onclick="digitPressed(5)"></button>
-            <button id="6" onclick="digitPressed(6)"></button>
-            <button id="7" onclick="digitPressed(7)"></button>
-            <button id="8" onclick="digitPressed(8)"></button>
-            <button id="9" onclick="digitPressed(9)"></button>
+            <button id="0" onclick="digitPressed(0)">0</button>
+            <button id="1" onclick="digitPressed(1)">1</button>
+            <button id="2" onclick="digitPressed(2)">2</button>
+            <button id="3" onclick="digitPressed(3)">3</button>
+            <button id="4" onclick="digitPressed(4)">4</button>
+            <button id="5" onclick="digitPressed(5)">5</button>
+            <button id="6" onclick="digitPressed(6)">6</button>
+            <button id="7" onclick="digitPressed(7)">7</button>
+            <button id="8" onclick="digitPressed(8)">8</button>
+            <button id="9" onclick="digitPressed(9)">9</button>
           </div>
 
           <div class="operators">
-            <button id="add"></button>
-            <button id="substract"></button>
-            <button id="multiply"></button>
-            <button id="divide"></button>
+            <button id="add" onclick="operatorPressed('+')">+</button>
+            <button id="substract" onclick="operatorPressed('-')">-</button>
+            <button id="multiply" onclick="operatorPressed('*')">*</button>
+            <button id="divide" onclick="operatorPressed('/')">/</button>
           </div>
 
-          <button id="equal"></button>
-          <button id="clear"></button>
+          <button id="equal" onclick="equalPressed()">=</button>
+          <button id="clear" onclick="clearPressed()">CLEAR</button>
 
         </div>
       </div>
