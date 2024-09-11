@@ -27,6 +27,9 @@ main {
 
 .calculator .display {
     flex-basis: 125px;
+    max-width: 400px;
+    max-height: 125px;
+    overflow: hidden;
     background-color: #034f8c;
     color: #fefdf9;
     font-size: 4.5em;
@@ -54,7 +57,13 @@ main {
     aspect-ratio: 1 / 1;
     border-radius: 20%;
     color: #011627;   
-    font-size: 2em;            
+    font-size: 2em;       
+    
+    cursor: pointer;
+}
+
+.calculator .keyboard button:active {
+    transform: scale(0.95);
 }
 
 .calculator .keyboard .operator {
